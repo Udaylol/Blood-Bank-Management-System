@@ -16,9 +16,10 @@ import java.util.HashMap;
 
 public class Login {
 
-    static HashMap<String, String> users = new HashMap<>();
+    static HashMap<String, String> map = new HashMap<>();
+
     @FXML
-    private TextField emailField;
+    private TextField userField;
     @FXML
     private PasswordField passwordField;
     @FXML
@@ -35,7 +36,7 @@ public class Login {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/app/views/HomePage.fxml"));
             root = loader.load();
             scene = new Scene(root);
-            stage = (Stage) emailField.getScene().getWindow();
+            stage = (Stage) userField.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -45,12 +46,12 @@ public class Login {
 
     @FXML
     private void handleLogin() {
-        String username = emailField.getText();
+        String username = userField.getText();
         String password = passwordField.getText();
 
         if (username.isEmpty() || password.isEmpty()) {
             messageBox.setText("Field cannot be empty!");
-        } else if (users.containsKey(username) && users.get(username).equals(password)) {
+        } else if (map.containsKey(username) && map.get(username).equals(password)) {
             messageBox.setText("Login Successful");
             loadHomePage();
         } else {
@@ -59,16 +60,17 @@ public class Login {
     }
 
     public void handleCreateAccount() {
-        String username = emailField.getText();
+        String username = userField.getText();
         String password = passwordField.getText();
-        if (users.containsKey(username))
+        if (map.containsKey(username))
         {
             messageBox.setText("Username is already taken!");
         }
         else
         {
-            users.put(username,password);
-//            loadHomePage();
+            map.put(username,password);
+            messageBox.setText("Account created succesfully!");
+            passwordField.setText("");
         }
     }
 }

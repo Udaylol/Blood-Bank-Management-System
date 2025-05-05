@@ -9,106 +9,105 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
-            prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.views.HomePage">
     <HBox layoutX="10.0" layoutY="39.0" prefHeight="100.0" prefWidth="1060.0">
         <VBox prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                 <image>
-                    <Image url="@../resources/Donor.png"/>
+                    <Image url="@../resources/Donor.png" />
                 </image>
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Donor" textAlignment="CENTER">
                 <font>
-                    <Font size="16.0"/>
+                    <Font size="16.0" />
                 </font>
                 <VBox.margin>
-                    <Insets top="10.0"/>
+                    <Insets top="10.0" />
                 </VBox.margin>
             </Text>
         </VBox>
         <VBox prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../resources/SearchUser.png"/>
+                <Image url="@../resources/SearchUser.png" />
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search" textAlignment="CENTER">
                 <font>
-                    <Font size="16.0"/>
+                    <Font size="16.0" />
                 </font>
                 <VBox.margin>
-                    <Insets top="10.0"/>
+                    <Insets top="10.0" />
                 </VBox.margin>
             </Text>
         </VBox>
         <VBox prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                 <image>
-                    <Image url="@../resources/DeleteDonor.png"/>
+                    <Image url="@../resources/DeleteDonor.png" />
                 </image>
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Remove" textAlignment="CENTER">
                 <font>
-                    <Font size="16.0"/>
+                    <Font size="16.0" />
                 </font>
                 <VBox.margin>
-                    <Insets top="10.0"/>
+                    <Insets top="10.0" />
                 </VBox.margin>
             </Text>
         </VBox>
         <VBox prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../resources/stock.png"/>
+                <Image url="@../resources/stock.png" />
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock" textAlignment="CENTER">
                 <font>
-                    <Font size="16.0"/>
+                    <Font size="16.0" />
                 </font>
                 <VBox.margin>
-                    <Insets top="10.0"/>
+                    <Insets top="10.0" />
                 </VBox.margin>
             </Text>
         </VBox>
         <VBox prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../resources/schedule.png"/>
+                <Image url="@../resources/schedule.png" />
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule" textAlignment="CENTER">
                 <font>
-                    <Font size="16.0"/>
+                    <Font size="16.0" />
                 </font>
                 <VBox.margin>
-                    <Insets top="10.0"/>
+                    <Insets top="10.0" />
                 </VBox.margin>
             </Text>
         </VBox>
-        <VBox prefHeight="100.0" prefWidth="60.0">
+        <VBox fx:id="logoutButton" onMouseClicked="#logout" prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
-                <Insets left="50.0" right="50.0"/>
+                <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../resources/exit.png"/>
+                <Image url="@../resources/exit.png" />
             </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Exit" textAlignment="CENTER">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out" textAlignment="CENTER">
                 <font>
-                    <Font size="16.0"/>
+                    <Font size="16.0" />
                 </font>
                 <VBox.margin>
-                    <Insets top="10.0"/>
+                    <Insets top="10.0" />
                 </VBox.margin>
             </Text>
         </VBox>
