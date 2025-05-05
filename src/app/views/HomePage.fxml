@@ -79,7 +79,7 @@
                 </VBox.margin>
             </Text>
         </VBox>
-        <VBox prefHeight="100.0" prefWidth="60.0">
+        <VBox fx:id="scheduleButton" onMouseClicked="#scheduleAppointment" prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
                 <Insets left="50.0" right="50.0" />
             </HBox.margin>
