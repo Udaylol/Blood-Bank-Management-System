@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.views.HomePage">
     <HBox layoutX="10.0" layoutY="39.0" prefHeight="100.0" prefWidth="1060.0">
-        <VBox prefHeight="100.0" prefWidth="60.0">
+        <VBox fx:id="donorButton" onMouseClicked="#addDonor" prefHeight="100.0" prefWidth="60.0">
             <HBox.margin>
                 <Insets left="50.0" right="50.0" />
             </HBox.margin>
@@ -68,7 +68,7 @@
                 <Insets left="50.0" right="50.0" />
             </HBox.margin>
             <ImageView fitHeight="70.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../resources/stock.png" />
+                <Image url="@../resources/Stock.png" />
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock" textAlignment="CENTER">
                 <font>

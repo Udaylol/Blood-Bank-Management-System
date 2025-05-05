@@ -38,4 +38,14 @@ public class HomePage {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    private void addDonor() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/app/views/AddDonor.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        stage = new Stage();
+        stage.setTitle("BloodLink");
+        stage.setScene(scene);
+        stage.show();
+    }
 }
